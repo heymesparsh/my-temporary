@@ -1,38 +1,161 @@
 .App {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  line-height: 1.4rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginpage {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+}
+
+.log-section {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 170px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 13px 0px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input.inp1 {
+  border-bottom: 1px solid lightgrey;
 }
+
+.attrib {
+  position: relative;
+  width: 65%;
+}
+
+.btn {
+  border: 1px solid #fff;
+  background: #183e9c;
+  color: #fff;
+  transition: 0.3s;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #183e9c;
+  border: 1px solid #183e9c;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+.dine-overlay {
+  background-image: url(./dine.jpg);
+
+  background-size: cover;
+
+  background-position: center;
+
+  position: relative;
+  width: 50%;
+  height: 100vh;
+}
+.automate-takeaway {
+  font-size: 24px;
+
+  padding-top: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+p {
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 16px;
+}
+a {
+  background: 0 0;
+  text-decoration: none;
+}
+a.login-box {
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  border: 1px solid #fff;
+  padding: 0.5rem 1.2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  color: #fff;
+  transition: 0.3s;
+}
+a.login-box:hover {
+  color: #4f7be8;
+  border: 1px solid #4f7be8;
+}
+
+.user-input-wrp .inputText {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: none !important;
+}
+.user-input-wrp .inputText-1 {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: none !important;
+}
+.user-input-wrp .inputText:focus {
+  border-color: black;
+  border-width: medium medium 1px;
+}
+.user-input-wrp .inputText-1:focus {
+  border-color: black;
+  border-width: medium medium 1px;
+}
+.user-input-wrp .floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 0px;
+  transition: 0.2s ease all;
+  font-size: 14px;
+  color: gray;
+}
+.user-input-wrp .floating-label-1 {
+  position: absolute;
+  pointer-events: none;
+  top: 80px;
+  left: 0px;
+  transition: 0.2s ease all;
+  font-size: 14px;
+  color: gray;
+}
+.user-input-wrp .inputText-1:focus ~ .floating-label-1,
+.user-input-wrp .inputText-1:not(:focus):valid ~ .floating-label-1 {
+  top: 55px;
+  left: 0px;
+  font-size: 10px;
+  opacity: 1;
+}
+.user-input-wrp .inputText:focus ~ .floating-label,
+.user-input-wrp .inputText:not(:focus):valid ~ .floating-label {
+  top: -15px;
+  left: 0px;
+  font-size: 10px;
+  opacity: 1;
+}
+
