@@ -10,11 +10,13 @@ function App() {
           <b>Automate your takeaway</b>{' '}
         </div>
         <p>
-          Pos features help your business to be fully automated with <br />{' '}
-          DineOrder online ordering system.
+          <b>
+            Pos features help your business to be fully automated with <br />{' '}
+            DineOrder online ordering system.
+          </b>
         </p>
         <a href='#' class='login-box' tabindex='0'>
-          View More
+          <b>View More</b>
         </a>
       </div>
       <div className='log-section'>
